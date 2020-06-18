@@ -190,7 +190,7 @@ export default class ChatContainer extends Component {
 						activeChat !== null ? (
 
 							<div className="chat-room">
-								<ChatHeading name={activeChat.name} />
+								<ChatHeading name={activeChat.name} chats={chats} />
 								<Messages 
 									messages={activeChat.messages}
 									user={user}
